@@ -1,0 +1,43 @@
+@import '../../helpers/variableBreakPoints.scss';
+
+div.dayCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 6em;
+  margin: 0 0.5em;
+
+  div.dayCard__name {
+    padding-top: 0.5em;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  div.dayCard__image {
+    margin: 1vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.dayCard__image.light {
+    background-color: rgba($color: $light_secondaryColor, $alpha: 0.75);
+  }
+
+  div.dayCard__temp {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0.5em;
+    font-size: 1.25em;
+  }
+}
+
+div.dayCard.dark.active {
+  border: 1px solid rgba($color: $dark_primaryColor, $alpha: 0.25);
+}
+
+div.dayCard.light.active {
+  border: 1px solid rgba($color: $light_primaryColor, $alpha: 0.25);
+}

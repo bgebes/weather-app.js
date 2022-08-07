@@ -1,0 +1,17 @@
+@import '../../helpers/variableBreakPoints.scss';
+
+div.inputChoose > select.comboBox {
+  padding: 0.75em 0.25em;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+div.inputChoose.light > select.comboBox {
+  color: $light_textColor;
+  background-color: $light_backgroundColor;
+}
+
+div.inputChoose.dark > select.comboBox {
+  color: $dark_textColor;
+  background-color: $dark_primaryColor;
+}
